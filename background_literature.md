@@ -12,8 +12,12 @@
 | dod-2021-ClimateAdaptionPlan   | Department of Defense Climate Adaptation Plan       | 32      | DoD five priority adaptation actions (lines of effort): climate informed decision making, train and equip a climate ready force, build resilient and natural infrastructure, innovate supply chain, and enhance adaptation and resilience through collaboration. Climate Action plan contains four topic areas: updating climate vulnerability assessments, enhance climate literacy in workforce management, install climate-ready sites, facilities, and infrastructure, and enhance resilience of climate-ready supply of products and services.|
 | ElectricPropulsionShips-CBO   | Electric-Drive Propulsion for U.S. Navy Ships: Background and Issues for Congress        | 61      | Electric-drive technology offers significant anticipated benefits for U.S. Navy ships in terms of reducing ship life-cycle cost, increasing ship stealthiness, payload, survivability, and power available for non-propulsion uses, and taking advantage of a strong electrical-power technological and industrial base. Pursuing electric-drive will incur higher near-term costs than a strategy that places continued emphasis on mechanical-drive technology. Estimates of the costs and benefits of electric-drive technology should arguably include measures that examine not just shorter-but also longer-term costs and warfighting effects.|
 | energy-efficiency-design-index   | energy-efficiency-design-index        | 13      | Energy Efficiency Design Index(EEDI) is an index that estimates grams of CO2 per transport work. EEDI formula takes into consideration special design features and needs,including the use of energy recovery,low carbon fuels,performance of ships in waves and the need for ice strengthening of certain ships.|
-| Paragraph   | Text        | And more      | summary here|
-| Paragraph   | Text        | And more      | summary here|
-| Paragraph   | Text        | And more      | summary here|
-| Paragraph   | Text        | And more      | summary here|
-| Paragraph   | Text        | And more      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
+| Doc_Name   | Title        | Num_pages      | summary here|
