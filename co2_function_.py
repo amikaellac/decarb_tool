@@ -1,3 +1,6 @@
+#Andres Zamudio Bucio 
+#andres.zamudiobucio@nps.edu
+#07/05/2023
 import pandas as pd 
 
 ship_name = "LHA-6CL"
