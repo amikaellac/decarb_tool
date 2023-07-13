@@ -1,0 +1,94 @@
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .dropdown {
+            margin-bottom: 10px;
+        }
+        .input-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Navy Ships & Fuels</h1>
+        <div class="dropdown">
+            <label for="ship_name">Select Ship:</label>
+            <select id="ship_name">
+                <option value="" disabled selected>Ship</option>
+                <option value="LHA-6CL">LHA-6CL</option>
+                <option value="LPD-17CL">LPD-17CL</option>
+                <option value="CG-47CL">CG-47CL</option>
+                <option value="MCM-1CL">MCM-1CL</option>
+                <option value="DDG-51CL">DDG-51CL</option>
+                <option value="LSD-41CL">LSD-41CL</option>
+                <option value="LHD-1CL">LHD-1CL</option>
+                <option value="LCS-1CL">LCS-1CL</option>
+                <option value="LCC-19CL">LCC-19CL</option>
+                <option value="FFG-7CL">FFG-7CL</option>
+                <option value="LCS-2CL">LCS-2CL</option>
+                <option value="LPD-4CL">LPD-4CL</option>
+                <option value="DDG-1000CL">DDG-1000CL</option>
+                <option value="LHA-1CL">LHA-1CL</option>
+                <option value="LSD-49CL">LSD-49CL</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <label for="fuel_type">Select Fuel:</label>
+            <select id="fuel_type">
+                <option value="" disabled selected>Fuel</option>
+                <option value="F76">F76</option>
+                <option value="Ethanol">Ethanol</option>
+                <option value="LPG">LPG</option>
+                <option value="Methanol">Methanol</option>
+                <option value="All">All</option>
+            </select>
+        </div>
+        <div class="input-row">
+            <label for="hours_underway">Hours Underway:</label>
+            <input type="number" id="hours_underway" min="0" value="0">
+        </div>
+        <div class="input-row">
+            <label for="hours_not_underway">Hours Not Underway:</label>
+            <input type="number" id="hours_not_underway" min="0" value="0">
+        </div>
+        <div class="input-row">
+            <label for="cold_iron">Cold Iron:</label>
+            <input type="number" id="cold_iron" min="0" value="0">
+        </div>
+        <button type="button" id="submitBtn">Submit</button>
+	<div id="resultContainer" style="display: none;">
+  	<h2>Results</h2>
+  	<div id="resultContent"></div>
+</div>
+
+    </div>
+
+    <script>
+        // Add an event listener to the submit button
+        document.getElementById("submitBtn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+    
+    // Log input values to the console
+    const ship = document.getElementById("ship_name").value;
+    const fuelType = document.getElementById("fuel_type").value;
+    const underway = document.getElementById("hours_underway").value;
+    const notUnderway = document.getElementById("hours_not_underway").value;
+    const coldIron = document.getElementById("cold_iron").value;
+
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
