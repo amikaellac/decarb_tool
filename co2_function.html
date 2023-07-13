@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Doc</title>
+</head>
+<body>
+    <h1>CSV Data </h1>
+    
+    <script type= "text/javascript" src= "getData.js"></script> 
+    <script src = "make_results.js"></script>
+    <script src = "calc_ship_info.js"></script> 
+
+    
+    <script>  
+        var ship_name = "LHA-6CL"
+        var fuel_type = "f76"
+        const underway= 0.9; 
+        const not_underway =0.1; 
+        const cold_iron = 0.0; 
+        const mission_days = 365; 
+   
+        calculate_ship_info(ship_name, fuel_type, underway, not_underway, cold_iron, mission_days);
+        
+    </script>
+
+</body>
+</html> --> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Test Doc</title>
+</head>
+<body>
+    <h1>CSV Data</h1>
+    
+    <button onclick="showShipData()">Calculate Ship Info</button>
+    <div id="shipData"></div>
+
+    <script type="text/javascript" src="getData.js"></script> 
+    <script src="make_results.js"></script>
+    <script src="calc_ship_info.js"></script> 
+
+    <script>  
+        var ship_name = "LHA-6CL";
+        var fuel_type = "All";
+        const underway = 0.9; 
+        const not_underway = 0.1; 
+        const cold_iron = 0.0; 
+        const mission_days = 365; 
+
+        async function showShipData() {
+            const shipData = await calculate_ship_info(ship_name, fuel_type, underway, not_underway, cold_iron, mission_days);
+            document.getElementById("shipData").innerHTML = JSON.stringify(shipData);
+        }
+    </script>
+</body>
+</html>
