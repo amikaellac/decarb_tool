@@ -82,12 +82,16 @@ def calculate_ship_info(ship_name, fuel_type, underway, not_underway, cold_iron,
             # results[ship_name][fuel_type] = make_results_dict(density, conversion, underway,not_underway,cold_iron,optimum,worst,x_underway,b_underway, x_not_underway, b_not_underway, x_cold_iron, b_cold_iron, mission_days,DAYS_PER_YEAR=365,hours_year=8760,lbs_to_ton=0.0005)
             ship_results[ship_name][fuel] = make_results_dict(
                 density, conversion, underway, not_underway, cold_iron, **ship_data)
-
-    if fuel_type in fuel_density:
-        return ship_results[ship_name][fuel_type]
-
-    else:
+            
+    if ship_name.lower == "all" : 
         return ship_results
+
+    elif fuel_type in fuel_density:
+        return ship_results[ship_name][fuel_type]
+    
+    else: 
+        return ship_results[ship_name]
+        
 
 
 shipcalc = calculate_ship_info(
